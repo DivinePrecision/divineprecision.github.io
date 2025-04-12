@@ -18,74 +18,30 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
         }
-        .hero-section {
-            background: linear-gradient(90deg, #E0F7FA 0%, #B2EBF2 100%); /* Light and Professional */
-            position: relative;
-            overflow: hidden;
-        }
-        #particles-js {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        .principle-card {
-            border-left: 5px solid #64B5F6;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        .principle-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
-        }
-        .founder-image-container {
-            position: relative;
-            overflow: hidden;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        .founder-image-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(79, 70, 229, 0.75); /* Indigo 600 with opacity */
-            color: white;
-            padding: 1rem 1.5rem;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .founder-image-container:hover .founder-image-overlay {
-            opacity: 1;
-        }
+        /* Consider moving these to a separate CSS file for better organization */
     </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <script>
         if (window.location.pathname.endsWith(".html")) {
             const newPath = window.location.pathname.slice(0, -5);
             window.history.replaceState(null, document.title, newPath);
         }
     </script>
-    <header class="bg-white dark:bg-gray-800 shadow-md transition-all duration-300">
-        <div class="container mx-auto px-6 py-5 flex items-center justify-between">
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-10 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center font-semibold text-gray-900 dark:text-gray-100">
-                <span class="font-poppins text-indigo-600 dark:text-indigo-400 text-2xl tracking-tight uppercase mr-2"></span>
+                <span class="font-poppins text-indigo-600 dark:text-indigo-400 text-2xl tracking-tight uppercase mr-2">DP</span>
                 <span class="text-xl tracking-wide font-semibold">Divine</span>
                 <span class="ml-1 text-xl tracking-wide font-light">Precision</span>
             </a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Home</a>
-                <a href="services.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Services</a>
-                <a href="solutions.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Solutions</a>
-                <a href="about.html" class="text-blue-600 font-semibold dark:text-blue-400 transition-colors duration-200">About Us</a>
-                <a href="case-studies.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Case Studies</a>
-                <a href="contact.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Contact Us</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-200">Home</a>
+                <a href="services.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-200">Services</a>
+                <a href="solutions.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-200">Solutions</a>
+                <a href="about.html" class="text-indigo-600 font-semibold dark:text-indigo-400 transition-colors duration-200">About Us</a>
+                <a href="case-studies.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-200">Case Studies</a>
+                <a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-200">Contact Us</a>
             </nav>
             <div class="flex items-center space-x-4">
                 <button id="theme-toggle" class="focus:outline-none rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
@@ -101,127 +57,111 @@
         </div>
         <div class="md:hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Home</a>
-                <a href="services.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Services</a>
-                <a href="solutions.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Solutions</a>
-                <a href="about.html" class="block bg-indigo-50 text-indigo-700 hover:bg-indigo-100 py-2 px-3 rounded-md text-base font-medium dark:bg-indigo-700 dark:text-indigo-100 dark:hover:bg-indigo-600">About Us</a>
-                <a href="case-studies.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Case Studies</a>
-                <a href="contact.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Contact Us</a>
+                <a href="index.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+                <a href="services.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">Services</a>
+                <a href="solutions.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">Solutions</a>
+                <a href="about.html" class="block py-2 px-3 rounded-md bg-indigo-50 text-indigo-700 dark:bg-indigo-700 dark:text-indigo-100 hover:bg-indigo-100 dark:hover:bg-indigo-600">About Us</a>
+                <a href="case-studies.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">Case Studies</a>
+                <a href="contact.html" class="block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">Contact Us</a>
             </div>
         </div>
     </header>
 
-    <section class="hero-section py-24">
-        <div id="particles-js"></div>
-        <div class="container mx-auto px-6 text-center hero-content">
-            <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-8 tracking-tight">About Divine Precision</h1>
-            <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-10">
-                At Divine Precision, our mission is driven by a core set of principles that define how we operate and the value we bring to our clients. We believe in building lasting partnerships through trust, expertise, and a relentless focus on your success.
-            </p>
-            <a href="#principles" class="inline-flex items-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300">
-                Our Core Principles
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
-            </a>
-        </div>
-    </section>
+    <main>
+        <section class="bg-indigo-50 dark:bg-indigo-900 py-20 relative overflow-hidden">
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-4xl font-bold text-indigo-900 dark:text-indigo-100 mb-6 tracking-tight">About Divine Precision</h1>
+                <p class="text-lg text-indigo-700 dark:text-indigo-300 leading-relaxed mb-8">
+                    Discover our passion for technology and our commitment to delivering precise IT solutions.
+                </p>
+                <a href="#principles" class="inline-flex items-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300">
+                    Explore Our Principles
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </a>
+            </div>
+            {/* Subtle Background Element (Consider SVG or a simple shape) */}
+            <div class="absolute top-0 left-0 w-full h-full opacity-10 dark:opacity-20">
+                {/* You could add a subtle background image or a pattern here */}
+            </div>
+        </section>
 
-    <section id="principles" class="py-20 bg-white dark:bg-gray-800">
-        <div class="container mx-auto px-6 lg:px-20">
-            <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-12 text-center">Our Guiding Principles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-white dark:bg-gray-700 rounded-md shadow-md p-8 principle-card">
-                    <h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">Customer First</h3>
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Your success is our purpose. We prioritize your needs and work tirelessly to achieve your goals.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 rounded-md shadow-md p-8 principle-card">
-                    <h3 class="text-xl font-semibold text-green-600 dark:text-green-400 mb-3">Clarity & Precision</h3>
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We believe in transparent communication and delivering solutions with exactitude and attention to detail.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 rounded-md shadow-md p-8 principle-card">
-                    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Built with Care</h3>
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Every solution we craft is built with meticulous care, ensuring reliability, scalability, and long-term value.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 rounded-md shadow-md p-8 principle-card">
-                    <h3 class="text-xl font-semibold text-yellow-600 dark:text-yellow-400 mb-3">Ownership Mindset</h3>
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We approach every project with an ownership mindset, taking responsibility and striving for the best possible outcome, as if it were our own business.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 rounded-md shadow-md p-8 principle-card">
-                    <h3 class="text-xl font-semibold text-red-600 dark:text-red-400 mb-3">Growth Together</h3>
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Your growth is our growth. We are committed to scaling with you, providing the support and solutions you need at every stage.</p>
+        <section id="principles" class="py-16 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-6 lg:px-20">
+                <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-10 text-center">Our Core Principles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2"><i class="fas fa-users mr-2"></i> Customer Focus</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We prioritize understanding and meeting the unique needs of each client.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-semibold text-green-600 dark:text-green-400 mb-2"><i class="fas fa-lightbulb mr-2"></i> Innovation</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We embrace cutting-edge technologies and creative solutions to drive progress.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2"><i class="fas fa-wrench mr-2"></i> Precision & Quality</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We are committed to delivering high-quality solutions with meticulous attention to detail.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-semibold text-yellow-600 dark:text-yellow-400 mb-2"><i class="fas fa-handshake mr-2"></i> Collaboration</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We believe in strong partnerships, both internally and with our clients.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-semibold text-red-600 dark:text-red-400 mb-2"><i class="fas fa-chart-line mr-2"></i> Growth & Impact</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We aim to foster growth for our clients and make a positive impact through our work.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2"><i class="fas fa-shield-alt mr-2"></i> Integrity & Trust</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We operate with the highest ethical standards, building trust and transparency.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bg-white dark:bg-gray-800 py-20">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
-                <div class="order-2 md:order-1 text-center md:text-left">
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">A Visionary Leader</h2>
-                    <h3 class="text-4xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">Vimal Patel</h3>
-                    <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-                        Founder & CEO, Divine Precision
-                    </p>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-                        Driven by an unwavering belief in the power of technology to transform businesses, Vimal Patelestablished Divine Precision with a clear mission: to deliver IT solutions with unparalleled accuracy and a client-first approach. His leadership is characterized by a deep understanding of the industry, a passion for innovation, and a commitment to fostering a culture of excellence.
-                    </p>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Core Philosophy:</h4>
-                            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                                "At Divine Precision, we don't just build software or provide services; we forge partnerships. Our success is intrinsically linked to the success of our clients. We strive for clarity in communication, precision in execution, and a relationship built on trust and mutual growth."
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Guiding Principles:</h4>
-                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed">
-                                <li>Customer First</li>
-                                <li>Clarity & Precision</li>
-                                <li>Built with Care</li>
-                                <li>Ownership Mindset</li>
-                                <li>Growth Together</li>
-                            </ul>
-                        </div>
+        <section class="bg-gray-100 dark:bg-gray-800 py-16">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24">
+                <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+                    <div class="md:w-1/2 rounded-lg shadow-md overflow-hidden">
+                        <img src="/images/VimalPic_optimized.jpg" alt="Vimal Patel - Founder & CEO" class="w-full h-auto object-cover">
                     </div>
-                    <div class="mt-8">
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">Meet Our Founder</h2>
+                        <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">Vimal Patel</h3>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                            Driven by a passion for technology and a vision for precise IT solutions, Vimal Patel founded Divine Precision. His deep understanding of the industry and commitment to client success are the cornerstones of our company.
+                        </p>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                            Under his leadership, Divine Precision has grown into a trusted partner for businesses seeking reliable and innovative IT services. His focus on fostering a collaborative and results-oriented culture drives our team to excel.
+                        </p>
                         <a href="contact.html" class="inline-flex items-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300">
                             Connect with Vimal
                             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5h-18"></path></svg>
                         </a>
                     </div>
                 </div>
-                <div class="order-1 md:order-2 relative">
-                    <div class="founder-image-container aspect-w-1 aspect-h-1 md:aspect-w-3 md:aspect-h-4">
-                        <img src="/images/VimalPic.jpg" alt="Vimal Patel - Founder & CEO" class="object-cover w-full h-full">
-                        <div class="founder-image-overlay">
-                            <h4 class="text-lg font-semibold mb-1">Vimal Patel</h4>
-                            <p class="text-sm">Founder & CEO</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-24 bg-white dark:bg-gray-800">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-8">Ready to Experience Precision?</h2>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-10">
-                Let's discuss how Divine Precision's core principles and Vimal's leadership can drive your business success.
-            </p>
-            <a href="contact.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg transition duration-300">
-                Get in Touch
-            </a>
-        </div>
-    </section>
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-8">Ready to Partner with Precision?</h2>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-10">
+                    Discover how Divine Precision's expertise and client-focused approach can help your business thrive.
+                </p>
+                <a href="contact.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg transition duration-300">
+                    Contact Us Today
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer class="py-8 bg-gray-200 dark:bg-gray-700 text-center text-gray-600 dark:text-gray-400">
         <div class="container mx-auto px-6">
             <p class="mb-2">&copy; 2025 Divine Precision. All rights reserved.</p>
-            <p class="text-sm">Built with precision, driven by your success.</p>
+            <p class="text-sm">Delivering Precise IT Solutions with Expertise and Trust.</p>
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         // Theme toggle and mobile menu scripts
@@ -254,113 +194,66 @@
             setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         }
 
-        // Particle effects
+        // Particle effects (optional - can be removed if not desired)
         particlesJS('particles-js', {
             particles: {
                 number: {
-                    value: 80,
+                    value: 60,
                     density: {
                         enable: true,
                         value_area: 800
                     }
                 },
                 color: {
-                    value: '#64B5F6'
+                    value: '#93C5FD' // Tailwind Blue-300
                 },
                 shape: {
                     type: 'circle',
                     stroke: {
                         width: 0,
                         color: '#000000'
-                    },
-                    polygon: {
-                        nb_sides: 5
-                    },
-                    image: {
-                        src: '',
-                        width: 100,
-                        height: 100
                     }
                 },
                 opacity: {
-                    value: 0.8,
+                    value: 0.5,
                     random: true,
                     anim: {
-                        enable: true,
-                        speed: 1,
-                        opacity_min: 0.3,
-                        sync: false
+                        enable: false
                     }
                 },
                 size: {
                     value: 3,
-                    random: true,
-                    anim: {
-                        enable: false,
-                        speed: 40,
-                        size_min: 0.1,
-                        sync: false
-                    }
+                    random: true
                 },
                 line_linked: {
                     enable: true,
                     distance: 150,
-                    color: '#B2EBF2',
+                    color: '#BFDBFE', // Tailwind Blue-200
                     opacity: 0.4,
                     width: 1
                 },
                 move: {
                     enable: true,
-                    speed: 3,
+                    speed: 2,
                     direction: 'none',
                     random: true,
                     straight: false,
                     out_mode: 'out',
-                    bounce: false,
-                    attract: {
-                        enable: false,
-                        rotateX: 600,
-                        rotateY: 1200
-                    }
+                    bounce: false
                 }
             },
             interactivity: {
                 detect_on: 'canvas',
                 events: {
                     onhover: {
-                        enable: true,
+                        enable: false,
                         mode: 'grab'
                     },
                     onclick: {
-                        enable: true,
+                        enable: false,
                         mode: 'push'
                     },
                     resize: true
-                },
-                modes: {
-                    grab: {
-                        distance: 140,
-                        line_linked: {
-                            opacity: 1
-                        }
-                    },
-                    bubble: {
-                        distance: 200,
-                        size: 40,
-                        duration: 2,
-                        opacity_out: 0.8,
-                        speed: 3
-                    },
-                    repulse: {
-                        distance: 100,
-                        duration: 0.4
-                    },
-                    push: {
-                        particles_nb: 4
-                    },
-                    remove: {
-                        particles_nb: 2
-                    }
                 }
             },
             retina_detect: true
