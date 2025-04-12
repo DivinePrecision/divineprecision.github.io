@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Divine Precision: Expertise You Can Trust</title>
-    <meta name="description" content="Discover Divine Precision: Our commitment to 'Customer First,' 'Clarity & Precision,' 'Built with Care,' 'Ownership Mindset,' and 'Growth Together' drives our IT consulting and services. Led by Founder & CEO Vimal Patel.">
-    <meta name="keywords" content="IT consulting, IT services, our values, core principles, customer first, clarity precision, built with care, ownership mindset, growth together, Divine Precision, Vimal Patel, Founder, CEO">
+    <meta name="description" content="Meet Vimal Patel, the visionary Founder & CEO of Divine Precision. Discover his passion for technology and commitment to delivering precise IT solutions. Learn about his leadership and the core principles driving our company's success.">
+    <meta name="keywords" content="Vimal Patel, Founder, CEO, Divine Precision, leadership, IT consulting, IT services, company vision, our team">
     <meta name="author" content="Divine Precision">
     <link rel="canonical" href="https://yourdomain.com/about-us">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -20,8 +20,8 @@
         }
         .hero-section {
             background: linear-gradient(90deg, #E0F7FA 0%, #B2EBF2 100%); /* Light and Professional */
-            position: relative; /* Needed for absolute positioning of the canvas */
-            overflow: hidden; /* Hide particles outside the hero */
+            position: relative;
+            overflow: hidden;
         }
         #particles-js {
             position: absolute;
@@ -29,114 +29,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0; /* Behind the content */
+            z-index: 0;
         }
         .hero-content {
-            position: relative; /* To be above the particles */
+            position: relative;
             z-index: 1;
         }
         .principle-card {
-            border-left: 5px solid #64B5F6; /* Subtle accent color */
+            border-left: 5px solid #64B5F6;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
         .principle-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
         }
-        /* New styles for the Leader Section */
-        .leader-section {
-            padding: 6rem 0;
-            background-color: #f4f6f8; /* Light gray background */
-            dark:bg-gray-800;
-        }
-        .leader-container {
-            max-width: 7xl;
-            margin: 0 auto;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-        .leader-grid {
-            display: grid;
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-            gap: 2rem;
-            @media (min-width: 768px) {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-        .leader-image-wrapper {
-            position: relative;
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        .leader-image-wrapper img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-        .leader-info {
-            padding: 2rem;
-            background-color: white;
-            dark:bg-gray-700;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .leader-name {
-            font-size: 2.25rem;
-            line-height: 2.5rem;
-            font-weight: 700;
-            color: #374151;
-            dark:text-gray-100;
-            margin-bottom: 0.5rem;
-        }
-        .leader-title {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-            color: #6b7280;
-            dark:text-gray-300;
-            margin-bottom: 1rem;
-        }
-        .leader-bio {
-            font-size: 1rem;
-            line-height: 1.75rem;
-            color: #4b5563;
-            dark:text-gray-200;
-            margin-bottom: 1.5rem;
-        }
-        .leader-vision-heading {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            font-weight: 600;
-            color: #374151;
-            dark:text-gray-100;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-        .leader-vision {
-            font-size: 1rem;
-            line-height: 1.75rem;
-            color: #4b5563;
-            dark:text-gray-200;
-        }
-        .animate-slide-in {
-            transform: translateX(-100%);
-            opacity: 0;
-            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-        }
-        .animate-slide-in.active {
-            transform: translateX(0);
-            opacity: 1;
-        }
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <script>
         if (window.location.pathname.endsWith(".html")) {
-            const newPath = window.location.pathname.slice(0, -5); // Remove ".html"
+            const newPath = window.location.pathname.slice(0, -5);
             window.history.replaceState(null, document.title, newPath);
         }
     </script>
@@ -201,7 +113,7 @@
                     <h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">Customer First</h3>
                     <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Your success is our purpose. We prioritize your needs and work tirelessly to achieve your goals.</p>
                 </div>
-                <div class="bg-white dark:bg-gray-700 rounded-md shadow-md shadow-md p-8 principle-card">
+                <div class="bg-white dark:bg-gray-700 rounded-md shadow-md p-8 principle-card">
                     <h3 class="text-xl font-semibold text-green-600 dark:text-green-400 mb-3">Clarity & Precision</h3>
                     <p class="text-gray-700 dark:text-gray-300 leading-relaxed">We believe in transparent communication and delivering solutions with exactitude and attention to detail.</p>
                 </div>
@@ -221,22 +133,34 @@
         </div>
     </section>
 
-    <section class="leader-section">
-        <div class="leader-container">
-            <div class="leader-grid">
-                <div class="leader-image-wrapper animate-slide-in">
-                    <img src="/images/VimalPic.jpg" alt="Vimal Patel" class="leader-image">
+    <section class="bg-white dark:bg-gray-800 py-16">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+                <div class="w-full md:w-1/2 rounded-lg shadow-xl overflow-hidden">
+                    <img src="/images/VimalPic.jpg" alt="Vimal Patel - Founder & CEO" class="w-full h-auto object-cover">
                 </div>
-                <div class="leader-info animate-slide-in">
-                    <h2 class="leader-name">Vimal Patel</h2>
-                    <p class="leader-title">Founder & CEO</p>
-                    <p class="leader-bio">
-                        With a deep-seated passion for technology and a clear vision for delivering precise and impactful IT solutions, Vimal Patel established Divine Precision. As the Founder and CEO, he personally spearheads the company's unwavering commitment to the core principles: 'Customer First,' 'Clarity & Precision,' 'Built with Care,' 'Ownership Mindset,' and 'Growth Together.' His leadership ensures that every client engagement is infused with his expertise, dedication, and a relentless pursuit of their success.
+
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">Meet Our Founder & CEO</h2>
+                    <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">Vimal Patel</h3>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                        Driven by a profound passion for leveraging technology to solve complex challenges, Vimal Patel embarked on the journey of establishing Divine Precision. His vision was clear: to build an IT consulting firm grounded in unwavering principles and a genuine commitment to client success.
                     </p>
-                    <h3 class="leader-vision-heading">Vision for Divine Precision</h3>
-                    <p class="leader-vision">
-                        "My vision for Divine Precision is to be more than just an IT service provider. I aim to build a trusted partner that empowers businesses through clarity, precision, and genuine care. We're not just building solutions; we're fostering growth and creating lasting value for our clients, treating their success as our own."
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                        As the Founder and CEO, Vimal's leadership is characterized by a hands-on approach, ensuring that the core values of 'Customer First,' 'Clarity & Precision,' 'Built with Care,' 'Ownership Mindset,' and 'Growth Together' are not just words, butthe very fabric of Divine Precision's operations. He fosters a culture of collaboration, innovation, and a relentless pursuit of excellence.
                     </p>
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Vimal's Core Belief:</h4>
+                        <blockquote class="text-md italic text-gray-600 dark:text-gray-400 leading-relaxed">
+                            "I believe that true IT partnership is built on trust, transparency, and a shared vision for growth. At Divine Precision, we're not just providing services; we're building lasting relationships and empowering our clients to achieve their most ambitious goals."
+                        </blockquote>
+                    </div>
+                    <div class="mt-6">
+                        <a href="contact.html" class="inline-flex items-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300">
+                            Connect with Vimal
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5h-18"></path></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -297,17 +221,17 @@
         particlesJS('particles-js', {
             particles: {
                 number: {
-                    value: 80, // Adjust for more or fewer particles
+                    value: 80,
                     density: {
                         enable: true,
                         value_area: 800
                     }
                 },
                 color: {
-                    value: '#64B5F6' // A visible color
+                    value: '#64B5F6'
                 },
                 shape: {
-                    type: 'circle', // Try 'circle', 'edge', 'triangle', 'polygon', 'star'
+                    type: 'circle',
                     stroke: {
                         width: 0,
                         color: '#000000'
@@ -322,17 +246,17 @@
                     }
                 },
                 opacity: {
-                    value: 0.8, // Higher value for more visible particles
+                    value: 0.8,
                     random: true,
                     anim: {
                         enable: true,
                         speed: 1,
-                        opacity_min: 0.3, // Ensure they don't disappear completely
+                        opacity_min: 0.3,
                         sync: false
                     }
                 },
                 size: {
-                    value: 3, // Adjust particle size
+                    value: 3,
                     random: true,
                     anim: {
                         enable: false,
@@ -342,15 +266,15 @@
                     }
                 },
                 line_linked: {
-                    enable: true, // Set to true for connecting lines
+                    enable: true,
                     distance: 150,
-                    color: '#B2EBF2', // A light color for the lines
+                    color: '#B2EBF2',
                     opacity: 0.4,
                     width: 1
                 },
                 move: {
                     enable: true,
-                    speed: 3, // Adjust particle speed
+                    speed: 3,
                     direction: 'none',
                     random: true,
                     straight: false,
@@ -368,11 +292,11 @@
                 events: {
                     onhover: {
                         enable: true,
-                        mode: 'grab' // Try 'grab', 'bubble', 'repulse', 'push', 'remove', 'trail'
+                        mode: 'grab'
                     },
                     onclick: {
                         enable: true,
-                        mode: 'push' // Try 'push', 'remove', 'bubble', 'repulse'
+                        mode: 'push'
                     },
                     resize: true
                 },
@@ -404,23 +328,6 @@
             },
             retina_detect: true
         });
-
-        // Simple animation for the leader section
-        const leaderSection = document.querySelector('.leader-section');
-        const leaderElements = document.querySelectorAll('.leader-image-wrapper, .leader-info');
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    leaderElements.forEach(element => element.classList.add('active'));
-                    observer.unobserve(leaderSection); // Animate only once
-                }
-            });
-        }, {
-            threshold: 0.2 // Trigger when 20% of the section is visible
-        });
-
-        observer.observe(leaderSection);
     </script>
 
 </body>
