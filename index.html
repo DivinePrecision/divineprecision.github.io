@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divine Precision: Strategic IT Solutions for Your Success</title>
     <meta name="description" content="Unlock your business potential with Divine Precision's expert IT consulting and services. We focus on innovation, efficiency, and a secure digital future.">
+    <meta name="keywords" content="IT solutions, IT consulting, software development, web development, mobile app development, cloud services, DevOps, AI, machine learning, IoT, technology, business solutions, digital transformation">
+    <meta name="author" content="Divine Precision">
+    <link rel="canonical" href="https://www.yourdomain.com/"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -33,6 +37,28 @@
         .cta-section {
             background: linear-gradient(135deg, #64B5F6 0%, #1E88E5 100%); /* More vibrant CTA */
         }
+        /* Custom responsive adjustments (optional, Tailwind should handle most) */
+        @media (max-width: 640px) {
+            .hero-section .container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            .hero-section h1 {
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            .grid-cols-md-3 > * {
+                width: 100%; /* Make grid items full width on medium screens and below */
+            }
+        }
+        @media (max-width: 768px) {
+            .grid-cols-lg-3 > * {
+                width: 100%; /* Make grid items full width on large screens and below */
+            }
+        }
     </style>
 </head>
 <body class="light-theme">
@@ -42,20 +68,20 @@
             window.history.replaceState(null, document.title, newPath);
         }
     </script>
-    <header class="bg-white shadow-md dark:bg-gray-800 transition-all duration-300">
+    <header class="bg-white shadow-md dark:bg-gray-800 transition-all duration-300 sticky top-0 z-50">
         <div class="container mx-auto px-6 py-5 flex items-center justify-between">
-            <a href="index.html" class="flex items-center font-semibold text-gray-900 dark:text-gray-100">
-                <span class="font-poppins text-indigo-600 dark:text-indigo-400 text-2xl tracking-tight uppercase mr-2"></span>
+            <a href="/" class="flex items-center font-semibold text-gray-900 dark:text-gray-100">
+                <span class="font-poppins text-indigo-600 dark:text-indigo-400 text-2xl tracking-tight uppercase mr-2">DP</span>
                 <span class="text-xl tracking-wide font-semibold">Divine</span>
                 <span class="ml-1 text-xl tracking-wide font-light">Precision</span>
             </a>
             <nav class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-blue-600 font-semibold dark:text-blue-400 transition-colors duration-200">Home</a>
-                <a href="services.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Services</a>
-                <a href="solutions.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Solutions</a>
-                <a href="about.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">About Us</a>
-                <a href="case-studies.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Case Studies</a>
-                <a href="contact.html" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Contact Us</a>
+                <a href="/" class="text-blue-600 font-semibold dark:text-blue-400 transition-colors duration-200 hover:text-indigo-700 dark:hover:text-indigo-300">Home</a>
+                <a href="/services" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Services</a>
+                <a href="/solutions" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Solutions</a>
+                <a href="/about" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">About Us</a>
+                <a href="/case-studies" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Case Studies</a>
+                <a href="/contact" class="text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition duration-200">Contact Us</a>
             </nav>
             <div class="flex items-center space-x-4">
                 <button id="theme-toggle" class="focus:outline-none rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
@@ -71,12 +97,12 @@
         </div>
         <div class="md:hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="block bg-indigo-50 text-indigo-700 hover:bg-indigo-100 py-2 px-3 rounded-md text-base font-medium dark:bg-indigo-700 dark:text-indigo-100 dark:hover:bg-indigo-600">Home</a>
-                <a href="services.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Services</a>
-                <a href="solutions.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Solutions</a>
-                <a href="about.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">About Us</a>
-                <a href="case-studies.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Case Studies</a>
-                <a href="contact.html" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Contact Us</a>
+                <a href="/" class="block bg-indigo-50 text-indigo-700 hover:bg-indigo-100 py-2 px-3 rounded-md text-base font-medium dark:bg-indigo-700 dark:text-indigo-100 dark:hover:bg-indigo-600">Home</a>
+                <a href="/services" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Services</a>
+                <a href="/solutions" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Solutions</a>
+                <a href="/about" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">About Us</a>
+                <a href="/case-studies" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Case Studies</a>
+                <a href="/contact" class="block text-gray-700 hover:bg-gray-200 py-2 px-3 rounded-md text-base font-medium dark:text-gray-300 dark:hover:bg-gray-700">Contact Us</a>
             </div>
         </div>
     </header>
@@ -84,18 +110,18 @@
     <section class="hero-section py-24">
         <div class="container mx-auto flex px-6 lg:px-20 items-center justify-between flex-col lg:flex-row gap-12">
             <div class="lg:w-1/2 w-full text-center lg:text-left">
-                <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-6">Achieve Digital Excellence with Strategic IT Partnerships</h1>
-                <p class="mb-8 leading-relaxed text-lg text-gray-700 dark:text-gray-300">Empower your business with Divine Precision's expert IT consulting and comprehensive services. We drive innovation, enhance efficiency, and secure your digital future.</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-6">Achieve Digital Excellence with Strategic IT Partnerships</h1>
+                <p class="mb-8 leading-relaxed text-lg md:text-xl text-gray-700 dark:text-gray-300">Empower your business with Divine Precision's expert IT consulting and comprehensive services. We drive innovation, enhance efficiency, and secure your digital future.</p>
                 <div class="flex justify-center lg:justify-start space-x-4">
-                    <a href="contact.html" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 text-lg">Schedule a Free Consultation</a>
-                    <a href="services.html" class="inline-flex items-center text-indigo-600 bg-indigo-50 border border-indigo-200 py-3 px-6 rounded-md font-semibold hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 text-lg">
+                    <a href="/contact" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 text-lg">Schedule a Free Consultation</a>
+                    <a href="/services" class="inline-flex items-center text-indigo-600 bg-indigo-50 border border-indigo-200 py-3 px-6 rounded-md font-semibold hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 text-lg">
                         Explore Our Services
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </a>
                 </div>
             </div>
             <div class="lg:w-1/2 w-full">
-                <img class="object-cover object-center rounded-lg shadow-xl" alt="modern-it-solutions" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                <img class="object-cover object-center rounded-lg shadow-xl" alt="Modern IT Solutions" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" loading="lazy">
             </div>
         </div>
     </section>
@@ -103,31 +129,31 @@
     <section class="py-16 bg-gray-50 dark:bg-gray-800">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-12">Our Core Principles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-8 feature-card">
                     <svg class="w-10 h-10 text-indigo-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2z"></path></svg>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Customer First</h3>
-                    <p class="text-gray-700 dark:text-gray-300 text-sm">Your success is our purpose. We prioritize your needs and goals.</p>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm md:text-base">Your success is our purpose. We prioritize your needs and goals.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-8 feature-card">
-                    <svg class="w-10 h-10 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6-3V7m2-3a2 2 0 10-4 0v3m4-3a2 2 0 11-4 0v3m2-3V10m-4 3a2 2 0 10-4 0v-3m4 3a2 2 0 11-4 0v-3m2 3V13m-4-4a2 2 0 10-4 0v4m4-4a2 2 0 11-4 0v4m2-4V16m-4-7a2 2 0 10-4 0v7m4-7a2 2 0 11-4 0v7m2-7V19"></path></svg>
+                    <svg class="w-10 h-10 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6-3V7m2-3a2 20v3m4-3a2 2 0 11-4 0v3m2-3V10m-4 3a2 2 0 10-4 0v-3m4 3a2 2 0 11-4 0v-3m2 3V13m-4-4a2 2 0 10-4 0v4m4-4a2 2 0 11-4 0v4m2-4V16m-4-7a2 2 0 10-4 0v7m4-7a2 2 0 11-4 0v7m2-7V19"></path></svg>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Clarity & Precision</h3>
-                    <p class="text-gray-700 dark:text-gray-300 text-sm">Transparent communication and exact, detailed solutions.</p>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm md:text-base">Transparent communication and exact, detailed solutions.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-8 feature-card">
                     <svg class="w-10 h-10 text-yellow-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Built with Care</h3>
-                    <p class="text-gray-700 dark:text-gray-300 text-sm">Crafted with exactitude, ensuring quality and reliability.</p>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm md:text-base">Crafted with exactitude, ensuring quality and reliability.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-8 feature-card">
                     <svg class="w-10 h-10 text-red-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Ownership Mindset</h3>
-                    <p class="text-gray-700 dark:text-gray-300 text-sm">Weapproach your challenges like our own, dedicated to your success.</p>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm md:text-base">We approach your challenges like our own, dedicated to your success.</p>
                 </div>
                 <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-8 feature-card">
                     <svg class="w-10 h-10 text-purple-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h10M7 16h10m0-7l5-5m0 5l-5-5m5 5v6a1 1 0 01-1 1H6a1 1 0 01-1-1V6a1 1 0 011-1h14a1 1 0 011 1v6m-1-7l-5 5m5-5l5 5"></path></svg>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Growth Together</h3>
-                    <p class="text-gray-700 dark:text-gray-300 text-sm">We scale with you, providing solutions for your evolving needs.</p>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm md:text-base">We scale with you, providing solutions for your evolving needs.</p>
                 </div>
             </div>
         </div>
@@ -215,7 +241,7 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Consulting & Strategy</h3>
-                    <p class="leading-relaxed text-gray-700 dark:text-gray-300">Tech audits, cloud migration plans, security strategy, and digital transformation advisory.</p>
+                    <p class="leading-relaxed text-gray-700 dark:text-gray-300">Tech audits, cloud migration plans, security strategy, and digitaltransformation advisory.</p>
                     <a href="/consulting-strategy" class="text-teal-500 inline-flex items-center mt-3 hover:text-teal-700 dark:text-teal-400 dark:hover:text-teal-300 transition duration-200">Learn About Consulting
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                             <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -229,7 +255,7 @@
     <section class="py-24 bg-gray-100 dark:bg-gray-800">
         <div class="container mx-auto flex px-6 lg:px-20 items-center justify-center flex-col lg:flex-row gap-16">
             <div class="lg:w-1/2 w-full">
-                <img class="object-cover object-center rounded-lg shadow-lg" alt="why-choose-us" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                <img class="object-cover object-center rounded-lg shadow-lg" alt="Why Choose Us" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" loading="lazy">
             </div>
             <div class="lg:w-1/2 w-full lg:pl-16">
                 <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-8">Why Choose Divine Precision?</h2>
@@ -241,7 +267,7 @@
                     <li>Proven Track Record of Success</li>
                     <li>Commitment to Long-Term Partnerships</li>
                 </ul>
-                <a href="about.html" class="inline-flex items-center text-white bg-indigo-600 border-0 py-3 px-6 focus:outline-none hover:bg-indigo-700 rounded-md text-lg transition duration-300">
+                <a href="/about" class="inline-flex items-center text-white bg-indigo-600 border-0 py-3 px-6 focus:outline-none hover:bg-indigo-700 rounded-md text-lg transition duration-300">
                     Learn More About Us
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
@@ -299,7 +325,7 @@
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold mb-8">Ready to Experience the Divine Precision Difference?</h2>
             <p class="text-lg mb-10">Let's discuss your IT challenges and explore how our tailored solutions can drive your business forward.</p>
-            <a href="contact.html" class="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-md shadow-md hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg transition duration-300">Get in Touch</a>
+            <a href="/contact" class="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-md shadow-md hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg transition duration-300">Get in Touch</a>
         </div>
     </section>
 
