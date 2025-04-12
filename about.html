@@ -39,7 +39,12 @@
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-
+    <script>
+        if (window.location.pathname.endsWith(".html")) {
+            const newPath = window.location.pathname.slice(0, -5); // Remove ".html"
+            window.history.replaceState(null, document.title, newPath);
+        }
+    </script>
     <header class="bg-white dark:bg-gray-800 shadow-md transition-all duration-300">
         <div class="container mx-auto px-6 py-5 flex items-center justify-between">
             <a href="index.html" class="flex items-center font-semibold text-gray-900 dark:text-gray-100">

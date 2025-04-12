@@ -39,7 +39,12 @@
     <meta property="twitter:description" content="Unlock your business's full potential with Divine Precision's Digital Transformation services in . We guide you through strategy, technology adoption, and automation.">
     </head>
 <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300">
-
+    <script>
+        if (window.location.pathname.endsWith(".html")) {
+            const newPath = window.location.pathname.slice(0, -5); // Remove ".html"
+            window.history.replaceState(null, document.title, newPath);
+        }
+    </script>
     <header class="bg-white shadow-md dark:bg-gray-800 transition-fast">
         <div class="container mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center font-semibold text-gray-900 dark:text-gray-100">

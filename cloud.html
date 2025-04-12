@@ -25,7 +25,12 @@
     <meta property="twitter:description" content="Leverage the power of the cloud with Divine Precision's expert AWS, Azure, and GCP solutions in . Scalability, security, and cost-efficiency for your business.">
 </head>
 <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300">
-
+    <script>
+        if (window.location.pathname.endsWith(".html")) {
+            const newPath = window.location.pathname.slice(0, -5); // Remove ".html"
+            window.history.replaceState(null, document.title, newPath);
+        }
+    </script>
     <header class="bg-white shadow-md dark:bg-gray-800">
         <div class="container mx-auto px-6 py-4 flex items-center justify-between">
             <a href="index.html" class="flex items-center font-semibold text-gray-900 dark:text-gray-100">
