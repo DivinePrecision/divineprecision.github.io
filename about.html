@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Divine Precision: Expertise You Can Trust</title>
-    <meta name="description" content="Discover Divine Precision: Our commitment to 'Customer First,' 'Clarity & Precision,' 'Built with Care,' 'Ownership Mindset,' and 'Growth Together' drives our IT consulting and services.">
-    <meta name="keywords" content="IT consulting, IT services, our values, core principles, customer first, clarity precision, built with care, ownership mindset, growth together, Divine Precision">
+    <meta name="description" content="Discover Divine Precision: Our commitment to 'Customer First,' 'Clarity & Precision,' 'Built with Care,' 'Ownership Mindset,' and 'Growth Together' drives our IT consulting and services. Led by Founder & CEO Vimal Patel.">
+    <meta name="keywords" content="IT consulting, IT services, our values, core principles, customer first, clarity precision, built with care, ownership mindset, growth together, Divine Precision, Vimal Patel, Founder, CEO">
     <meta name="author" content="Divine Precision">
     <link rel="canonical" href="https://yourdomain.com/about-us">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -43,12 +43,63 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
         }
-        .team-member-card {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        .leader-section {
+            background-color: #f9f9f9; /* Light background for contrast */
+            dark:bg-gray-800;
+            padding: 6rem 0; /* More prominent spacing */
         }
-        .team-member-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+        .leader-card {
+            background-color: white;
+            dark:bg-gray-700;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 3rem;
+            text-align: center;
+        }
+        .leader-image-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.06);
+        }
+        .leader-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .leader-title {
+            color: #64B5F6; /* Accent color for the name */
+            dark:text-indigo-400;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .leader-role {
+            color: #718096;
+            dark:text-gray-300;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .leader-bio {
+            color: #4a5568;
+            dark:text-gray-200;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        .leader-vision-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d3748;
+            dark:text-gray-100;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .leader-vision {
+            color: #4a5568;
+            dark:text-gray-200;
+            line-height: 1.7;
         }
     </style>
 </head>
@@ -140,30 +191,22 @@
         </div>
     </section>
 
-    <section class="py-20 bg-gray-100 dark:bg-gray-700">
+    <section class="leader-section">
         <div class="container mx-auto px-6 lg:px-20">
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-10">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100">Meet Our Leader</h2>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">The driving force behind Divine Precision's vision and commitment.</p>
+            <div class="leader-card">
+                <div class="leader-image-container">
+                    <img src="https://dummyimage.com/200x200/a0aec0/fff&text=VP" alt="Vimal Patel" class="leader-image">
                 </div>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                    <div class="w-48 h-48 rounded-full overflow-hidden shadow-md team-member-card">
-                        <img src="https://dummyimage.com/200x200/a0aec0/fff&text=VP" alt="Vimal Patel" class="w-full h-full object-cover">
-                    </div>
-                    <div class="text-center md:text-left">
-                        <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">Vimal Patel</h3>
-                        <p class="text-xl font-medium text-gray-800 dark:text-gray-200 mb-1">CEO and Founder</p>
-                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                            With a passion for technology and a vision for precise and impactful IT solutions, Vimal founded Divine Precision to empower businesses with the expertise and care they deserve. His leadership is guided by the core principles of putting the customer first and building lasting, growth-oriented partnerships.
-                        </p>
-                        <a href="/team" class="inline-flex items-center text-indigo-500 hover:text-indigo-700 font-semibold transition duration-300">
-                            Explore Our Full Team
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        </a>
-                    </div>
+                <h2 class="leader-title">Vimal Patel</h2>
+                <p class="leader-role">Founder & CEO</p>
+                <p class="leader-bio">
+                    With a deep-rooted passion for technology and a clear vision for delivering precise and impactful IT solutions, Vimal Patel established Divine Precision. As the Founder and CEO, he personally drives the company's commitment to the core principles of putting the customer first and fostering enduring, growth-oriented partnerships. His leadership ensures that every client benefits from his expertise and unwavering dedication to their success.
+                </p>
+                <h3 class="leader-vision-heading">Vimal's Vision</h3>
+                <p class="leader-vision">
+                    "I believe that true precision in IT goes beyond just technical expertise. It's about understanding our clients' unique challenges, communicating with absolute clarity, and building solutions with meticulous care and an ownership mindset. At Divine Precision, we are not just service providers; we are partners in our clients' growth, committed to their long-term success."
+                </p>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -171,7 +214,7 @@
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-8">Ready to Experience Precision?</h2>
             <p class="text-lg text-gray-700 dark:text-gray-300 mb-10">
-                Let's discuss how Divine Precision's core principles can drive your business success.
+                Let's discuss how Divine Precision's core principles and Vimal's leadership can drive your business success.
             </p>
             <a href="contact.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg transition duration-300">
                 Get in Touch
