@@ -20,6 +20,20 @@
         }
         .hero-section {
             background: linear-gradient(90deg, #E0F7FA 0%, #B2EBF2 100%); /* Light and Professional */
+            position: relative; /* Needed for absolute positioning of the canvas */
+            overflow: hidden; /* Hide particles outside the hero */
+        }
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind the content */
+        }
+        .hero-content {
+            position: relative; /* To be above the particles */
+            z-index: 1;
         }
         .principle-card {
             border-left: 5px solid #64B5F6; /* Subtle accent color */
@@ -85,7 +99,8 @@
     </header>
 
     <section class="hero-section py-24">
-        <div class="container mx-auto px-6 text-center">
+        <div id="particles-js"></div>
+        <div class="container mx-auto px-6 text-center hero-content">
             <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-8 tracking-tight">About Divine Precision</h1>
             <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-10">
                 At Divine Precision, our mission is driven by a core set of principles that define how we operate and the value we bring to our clients. We believe in building lasting partnerships through trust, expertise, and a relentless focus on your success.
@@ -171,6 +186,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         // Theme toggle and mobile menu scripts
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -201,6 +217,118 @@
         } else {
             setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         }
+
+        // Particle effects
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80, // Adjust for more or fewer particles
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#64B5F6' // A visible color
+                },
+                shape: {
+                    type: 'circle', // Try 'circle', 'edge', 'triangle', 'polygon', 'star'
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: '',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.8, // Higher value for more visible particles
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0.3, // Ensure they don't disappear completely
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3, // Adjust particle size
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true, // Set to true for connecting lines
+                    distance: 150,
+                    color: '#B2EBF2', // A light color for the lines
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 3, // Adjust particle speed
+                    direction: 'none',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab' // Try 'grab', 'bubble', 'repulse', 'push', 'remove', 'trail'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push' // Try 'push', 'remove', 'bubble', 'repulse'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 200,
+                        size: 40,
+                        duration: 2,
+                        opacity_out: 0.8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 100,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
     </script>
 
 </body>
