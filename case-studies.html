@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies - Your IT Consulting & Services Company</title>
+    <title>Case Studies - Divine Precision IT Consulting & Services</title>
+    <meta name="description" content="Explore real-world case studies showcasing our expertise in Web Development, Mobile App Development, Cloud & DevOps, AI & ML, IoT, and Consulting. See how we've helped businesses achieve their goals.">
+    <meta name="keywords" content="case studies, web development, mobile app development, cloud, devops, ai, ml, iot, consulting, success stories, client results">
+    <meta name="author" content="Divine Precision IT Consulting & Services">
+    <link rel="canonical" href="https://yourdomain.com/case-studies">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        /* Light Theme */
+        .light-theme {
+            background-color: #f3f4f6;
+            color: #1e293b;
+        }
+
+        .light-theme header {
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .light-theme header a, .light-theme header nav a {
+            color: #4b5563;
+        }
+
+        .light-theme header nav a:hover {
+            color: #2563eb;
+        }
+
+        .light-theme footer {
+            background-color: #f9fafb;
+            color: #6b7280;
+        }
+
+        /* Dark Theme */
+        .dark-theme {
+            background-color: #111827;
+            color: #d1d5db;
+        }
+
+        .dark-theme header {
+            background-color: #1f2937;
+            box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.05), 0 1px 2px -1px rgba(255, 255, 255, 0.05);
+        }
+
+        .dark-theme header a, .dark-theme header nav a {
+            color: #e5e7eb;
+        }
+
+        .dark-theme header nav a:hover {
+            color: #60a5fa;
+        }
+
+        .dark-theme footer {
+            background-color: #1f2937;
+            color: #9ca3af;
+        }
+    </style>
 </head>
 <body class="light-theme">
 
@@ -28,7 +92,7 @@
             <div class="flex items-center space-x-3">
                 <button id="theme-toggle" class="focus:outline-none">
                     <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 110-2h1V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-3-4h-2V2h2V6zM14 10a1 1 0 01-1 1h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 010-2h1V7a1 1 0 012 0v1h1a1 1 0 011 1z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 010-2h1V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-3-4h-2V2h2V6zM14 10a1 1 0 01-1 1h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 010-2h1V7a1 1 0 012 0v1h1a1 1 0 011 1z"></path></svg>
                 </button>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-gray-300 dark:hover:text-blue-400">
@@ -49,78 +113,115 @@
         </div>
     </header>
 
-    <section class="py-20 bg-gray-100">
+    <section class="py-16 bg-gradient-to-br from-blue-50 via-blue-100 to-white dark:bg-gradient-to-br dark:from-gray-800 dark:via-gray-900 dark:to-black">
         <div class="container mx-auto px-6 lg:px-20 text-center">
-            <h1 class="text-3xl font-extrabold text-gray-900 mb-8">Explore Our Success Stories</h1>
-            <p class="text-lg text-gray-700 mb-12">Discover how we've helped businesses like yours achieve their IT goals through our expertise and dedication.</p>
+            <h1 class="text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-6">Transforming Challenges into Success: Our Case Studies</h1>
+            <p class="text-xl text-gray-700 dark:text-gray-300 mb-12">Explore how Divine Precision has partnered with businesses across various industries to deliver impactful IT solutions.</p>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6 lg:px-20">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-8 text-center">Deep Dive into Our Expertise</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <h3 class="text-xl font-semibold text-indigo-600 mb-4">Project Alpha: Enhanced Efficiency for E-commerce Platform</h3>
-                    <p class="text-gray-700 mb-4">We implemented a scalable cloud infrastructure and optimized database performance, resulting in a 50% improvement in website loading speed and a 20% increase in sales conversion rates for a leading e-commerce client.</p>
-                    <a href="/case-study-alpha" class="text-indigo-500 inline-flex items-center mt-3">Read More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="E-commerce Platform Revamp" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">E-commerce Platform Revamp for "Urban Threads"</h3>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Challenge:** Urban Threads, a growing online retailer, faced low conversion rates and a clunky user experience on their outdated website.</p>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Solution:** We engineered a modern, responsive e-commerce platform using React, integrated a streamlined checkout process, and implemented personalized product recommendations.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-300 py-1 px-2 rounded-full text-xs font-semibold mr-2">Web Development</span>
+                            <span class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 py-1 px-2 rounded-full text-xs font-semibold">E-commerce</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <h3 class="text-xl font-semibold text-green-600 mb-4">Project Beta: Streamlined Operations with Custom Software</h3>
-                    <p class="text-gray-700 mb-4">We developed a custom enterprise resource planning (ERP) system that integrated various business processes, leading to a 30% reduction in operational costs and improved collaboration across departments for a manufacturing company.</p>
-                    <a href="/case-study-beta" class="text-green-500 inline-flex items-center mt-3">Read More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1556705087-9984dca953c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW9iaWxlJTIwYXBwJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Healthcare Access Mobile App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-600 dark:text-green-400 mb-2">PatientConnect: Mobile App for "MediCare Hospitals"</h3>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Challenge:** MediCare Hospitals aimed to improve patient access to services and streamline communication between doctors and patients.</p>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Solution:** We developed a cross-platform mobile app using Flutter, featuring appointment booking, virtual consultations, and secure medical record access.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-300 py-1 px-2 rounded-full text-xs font-semibold mr-2">Mobile App Development</span>
+                            <span class="inline-block bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-300 py-1 px-2 rounded-full text-xs font-semibold">Healthcare</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <h3 class="text-xl font-semibold text-yellow-600 mb-4">Project Gamma: Secured Infrastructure for Financial Institution</h3>
-                    <p class="text-gray-700 mb-4">We implemented a comprehensive cybersecurity strategy, including advanced threat detection and data encryption, ensuring full compliance with industry regulations and protecting sensitive customer data for a financial services provider.</p>
-                    <a href="/case-study-gamma" class="text-yellow-500 inline-flex items-center mt-3">Read More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47e7056328ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdWQlMjBjb2bXB1dGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Cloud Infrastructure for "Global Logistics"" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Scalable Cloud for "Global Logistics"</h3>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Challenge:** Global Logistics, a multinational shipping company, needed a more scalable and reliable infrastructure to handle their growing data and application demands.</p>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Solution:** We architected and deployed a cloud-native environment on AWS, implementing auto-scaling, serverless functions, and robust monitoring tools.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 py-1 px-2 rounded-full text-xs font-semibold mr-2">Cloud & DevOps</span>
+                            <span class="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-300 py-1 px-2 rounded-full text-xs font-semibold">AWS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <h3 class="text-xl font-semibold text-red-600 mb-4">Project Delta: AI-Powered Customer Engagement</h3>
-                    <p class="text-gray-700 mb-4">We developed an AI-powered chatbot and personalized recommendation engine that significantly improved customer engagement and satisfaction for a retail business, leading to a 15% increase in customer retention.</p>
-                    <a href="/case-study-delta" class="text-red-500 inline-flex items-center mt-3">Read More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="AI-Powered Quality Control for "Precision Manufacturing"" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-red-600 dark:text-red-400 mb-2">AI-Driven QC at "Precision Manufacturing"</h3>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Challenge:** Precision Manufacturing struggled with manual quality checks, leading to inconsistencies and potential defects in their high-precision components.</p>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Solution:** We developed and implemented an AI-powered visual inspection system using machine learning to automate defect detection with high accuracy.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-300 py-1 px-2 rounded-full text-xs font-semibold mr-2">AI & ML Solutions</span>
+                            <span class="inline-block bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-300 py-1 px-2 rounded-full text-xs font-semibold">Manufacturing</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <h3 class="text-xl font-semibold text-purple-600 mb-4">Project Epsilon: IoT Solution for Smart Manufacturing</h3>
-                    <p class="text-gray-700 mb-4">We designed and deployed an IoT platform that connected industrial equipment, enabling real-time monitoring and predictive maintenance, resulting in a 25% reduction in downtime for a manufacturing plant.</p>
-                    <a href="/case-study-epsilon" class="text-purple-500 inline-flex items-center mt-3">Read More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1598327105662-48b846413811?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Smart Infrastructure for "CityWide Utilities"" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-600 dark:text-purple-400 mb-2">Smart Infrastructure Monitoring for "CityWide Utilities"</h3>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Challenge:** CityWide Utilities needed a more efficient way to monitor their vast network of pipes and infrastructure for leaks and potential failures.</p>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Solution:** We designed and deployed an IoT sensor network with real-time data analytics to monitor infrastructure health and predict maintenance needs.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-300 py-1 px-2 rounded-full text-xs font-semibold mr-2">IoT Applications</span>
+                            <span class="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-300 py-1 px-2 rounded-full text-xs font-semibold">Smart City</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <h3 class="text-xl font-semibold text-teal-600 mb-4">Project Zeta: Cloud Migration for Enhanced Scalability</h3>
-                    <p class="text-gray-700 mb-4">We successfully migrated a large enterprise's entire IT infrastructure to a secure and scalable cloud environment, improving agility, reducing IT management overhead, and providing a platform for future growth.</p>
-                    <a href="/case-study-zeta" class="text-teal-500 inline-flex items-center mt-3">Read More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+                <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1551054183-5154b3ba9934?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29uc3VsdGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Digital Transformation for "Apex Financial Group"" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Digital Transformation at "Apex Financial Group"</h3>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Challenge:** Apex Financial Group faced outdated systems and a need to enhance customer engagement through digital channels.</p>
+                        <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">**Solution:** We provided strategic consulting, developed a cloud migration roadmap, and advised on implementing new customer relationship management (CRM) and data analytics platforms.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-300 py-1 px-2 rounded-full text-xs font-semibold mr-2">Consulting & Strategy</span>
+                            <span class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 py-1 px-2 rounded-full text-xs font-semibold">Finance</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="mt-8">
-                <a href="/contact" class="inline-flex text-indigo-500 hover:text-indigo-700 font-semibold transition duration-300">Discuss Your Project
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+
             </div>
         </div>
     </section>
 
-    <footer class="py-8 bg-gray-200 text-center text-gray-600">
-        <p>&copy; 2025 Your IT Consulting & Services Company. All rights reserved.</p>
+    <section class="py-16 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6">Ready to Write Your Own Success Story?</h2>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">Let's discuss your technology needs and explore how Divine Precision can help you achieve your business objectives.</p>
+            <a href="/contact" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Get in Touch <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-gray-200 dark:bg-gray-800 text-center text-gray-600 dark:text-gray-400">
+        <div class="container mx-auto px-6">
+            <p class="mb-2">&copy; 2025 Divine Precision IT Consulting & Services. All rights reserved.</p>
+            <p class="text-sm">Your Trusted IT Partner for Innovation and Growth.</p>
+        </div>
     </footer>
 
     <script>
