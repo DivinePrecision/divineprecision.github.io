@@ -46,7 +46,7 @@
             <div class="flex items-center space-x-4">
                 <button id="theme-toggle" class="focus:outline-none rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
                     <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 110-2h1V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-3-4h-2V2h2V6zM14 10a1 1 0 01-1 1h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 010-2h1V7a1 1 0 012 0v1h1a1 1 0 011 1z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 010-2h1V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-3-4h-2V2h2V6zM14 10a1 1 0 01-1 1h-1v1a1 1 0 01-2 0v-1h-1a1 1 0 010-2h1V7a1 1 0 012 0v1h1a1 1 0 011 1z"></path></svg>
                 </button>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-gray-300 dark:hover:text-indigo-400">
@@ -120,13 +120,10 @@
             </div>
         </section>
 
-        <section class="bg-gray-100 dark:bg-gray-800 py-16">
+        <section id="founder" class="bg-gray-100 dark:bg-gray-800 py-16">
             <div class="container mx-auto px-6 md:px-12 lg:px-24">
-                <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
-                    <div class="md:w-1/2 rounded-lg shadow-md overflow-hidden">
-                        <img src="/images/VimalPic.jpg" alt="Vimal Patel - Founder & CEO" class="w-full h-auto object-cover">
-                    </div>
-                    <div class="md:w-1/2 text-center md:text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_2fr] gap-12 items-center">
+                    <div class="order-2 md:order-1">
                         <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">Meet Our Founder</h2>
                         <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">Vimal Patel</h3>
                         <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
@@ -136,131 +133,137 @@
                             Under his leadership, Divine Precision has grown into a trusted partner for businesses seeking reliable and innovative IT services. His focus on fostering a collaborative and results-oriented culture drives our team to excel.
                         </p>
                         <a href="contact.html" class="inline-flex items-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300">
-                            Connect with Vimal<svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5h-18"></path></svg>
-                        </a>
+                            Connect with Vimal
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5h-18"></path></svg></a>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <div class="w-48 h-48 rounded-full overflow-hidden shadow-md mx-auto md:mx-0">
+                                <img src="/images/VimalPic_optimized.jpg" alt="Vimal Patel - Founder & CEO" class="w-full h-full object-cover">
+                            </div>
+                            <p class="mt-4 text-center md:text-left text-gray-600 dark:text-gray-400">Founder & CEO</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+    
+            <section class="py-16 bg-white dark:bg-gray-800">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-8">Ready to Partner with Precision?</h2>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-10">
+                        Discover how Divine Precision's expertise and client-focused approach can help your business thrive.
+                    </p>
+                    <a href="contact.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg transition duration-300">
+                        Contact Us Today
+                    </a>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="py-8 bg-gray-200 dark:bg-gray-700 text-center text-gray-600 dark:text-gray-400">
+            <div class="container mx-auto px-6">
+                <p class="mb-2">&copy; 2025 Divine Precision. All rights reserved.</p>
+                <p class="text-sm">Delivering Precise IT Solutions with Expertise and Trust.</p>
             </div>
-        </section>
-
-        <section class="py-16 bg-white dark:bg-gray-800">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-8">Ready to Partner with Precision?</h2>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-10">
-                    Discover how Divine Precision's expertise and client-focused approach can help your business thrive.
-                </p>
-                <a href="contact.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-lg transition duration-300">
-                    Contact Us Today
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-8 bg-gray-200 dark:bg-gray-700 text-center text-gray-600 dark:text-gray-400">
-        <div class="container mx-auto px-6">
-            <p class="mb-2">&copy; 2025 Divine Precision. All rights reserved.</p>
-            <p class="text-sm">Delivering Precise IT Solutions with Expertise and Trust.</p>
-        </div>
-    </footer>
-
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        // Theme toggle and mobile menu scripts
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
-        function setTheme(theme) {
-            localStorage.setItem('theme', theme);
-            document.documentElement.className = theme === 'dark' ? 'dark' : '';
-            themeToggleDarkIcon.classList.toggle('hidden', theme === 'light');
-            themeToggleLightIcon.classList.toggle('hidden', theme === 'dark');
-        }
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = localStorage.getItem('theme');
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-        });
-
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setTheme(savedTheme);
-        } else {
-            setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        }
-
-        // Particle effects
-        particlesJS('particles-js', {
-            particles: {
-                number: {
-                    value: 60,
-                    density: {
+        </footer>
+    
+        <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            // Theme toggle and mobile menu scripts
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    
+            function setTheme(theme) {
+                localStorage.setItem('theme', theme);
+                document.documentElement.className = theme === 'dark' ? 'dark' : '';
+                themeToggleDarkIcon.classList.toggle('hidden', theme === 'light');
+                themeToggleLightIcon.classList.toggle('hidden', theme === 'dark');
+            }
+    
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+    
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = localStorage.getItem('theme');
+                setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+            });
+    
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                setTheme(savedTheme);
+            } else {
+                setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            }
+    
+            // Particle effects
+            particlesJS('particles-js', {
+                particles: {
+                    number: {
+                        value: 80,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: '#ffffff' // White particles for better contrast
+                    },
+                    shape: {
+                        type: 'circle',
+                        stroke: {
+                            width: 0,
+                            color: '#000000'
+                        }
+                    },
+                    opacity: {
+                        value: 0.4,
+                        random: true,
+                        anim: {
+                            enable: false
+                        }
+                    },
+                    size: {
+                        value: 2,
+                        random: true
+                    },
+                    line_linked: {
                         enable: true,
-                        value_area: 800
-                    }
-                },
-                color: {
-                    value: '#93C5FD' // Tailwind Blue-300
-                },
-                shape: {
-                    type: 'circle',
-                    stroke: {
-                        width: 0,
-                        color: '#000000'
-                    }
-                },
-                opacity: {
-                    value: 0.5,
-                    random: true,
-                    anim: {
-                        enable: false
-                    }
-                },
-                size: {
-                    value: 3,
-                    random: true
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: '#BFDBFE', // Tailwind Blue-200
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: 'none',
-                    random: true,
-                    straight: false,
-                    out_mode: 'out',
-                    bounce: false
-                }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: {
-                    onhover: {
-                        enable: false,
-                        mode: 'grab'
+                        distance: 150,
+                        color: '#ffffff', // White lines
+                        opacity: 0.2,
+                        width: 1
                     },
-                    onclick: {
-                        enable: false,
-                        mode: 'push'
-                    },
-                    resize: true
-                }
-            },
-            retina_detect: true
-        });
-    </script>
-
-</body>
-</html>
+                    move: {
+                        enable: true,
+                        speed: 1,
+                        direction: 'none',
+                        random: true,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: {
+                            enable: false,
+                            mode: 'grab'
+                        },
+                        onclick: {
+                            enable: false,
+                            mode: 'push'
+                        },
+                        resize: true
+                    }
+                },
+                retina_detect: true
+            });
+        </script>
+    
+    </body>
+    </html>
