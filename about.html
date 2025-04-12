@@ -43,6 +43,26 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
         }
+        .founder-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .founder-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(79, 70, 229, 0.75); /* Indigo 600 with opacity */
+            color: white;
+            padding: 1rem 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .founder-image-container:hover .founder-image-overlay {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
@@ -143,7 +163,7 @@
                         Founder & CEO, Divine Precision
                     </p>
                     <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-                        Driven by an unwavering belief in the power of technology to transform businesses, Vimal Patel established Divine Precision with a clear mission: to deliver IT solutions with unparalleled accuracy and a client-first approach. His leadership is characterized by a deep understanding of the industry, a passion for innovation, and a commitment to fostering a culture of excellence.
+                        Driven by an unwavering belief in the power of technology to transform businesses, Vimal Patelestablished Divine Precision with a clear mission: to deliver IT solutions with unparalleled accuracy and a client-first approach. His leadership is characterized by a deep understanding of the industry, a passion for innovation, and a commitment to fostering a culture of excellence.
                     </p>
                     <div class="space-y-4">
                         <div>
@@ -171,12 +191,12 @@
                     </div>
                 </div>
                 <div class="order-1 md:order-2 relative">
-                    <div class="relative overflow-hidden rounded-lg shadow-xl aspect-w-1 aspect-h-1 md:aspect-w-3 md:aspect-h-4">
+                    <div class="founder-image-container aspect-w-1 aspect-h-1 md:aspect-w-3 md:aspect-h-4">
                         <img src="/images/VimalPic.jpg" alt="Vimal Patel - Founder & CEO" class="object-cover w-full h-full">
-                    </div>
-                    <div class="absolute bottom-0 left-0 right-0 bg-indigo-600 bg-opacity-75 text-white p-4 md:p-6">
-                        <h4 class="text-lg font-semibold mb-1">Vimal Patel</h4>
-                        <p class="text-sm">Founder & CEO</p>
+                        <div class="founder-image-overlay">
+                            <h4 class="text-lg font-semibold mb-1">Vimal Patel</h4>
+                            <p class="text-sm">Founder & CEO</p>
+                        </div>
                     </div>
                 </div>
             </div>
