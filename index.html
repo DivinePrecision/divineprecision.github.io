@@ -348,26 +348,34 @@
         const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
         
         function setTheme(theme) {
-        localStorage.setItem('theme', theme);
-        if (theme === 'dark') {
+    console.log('setTheme called with:', theme);
+    localStorage.setItem('theme', theme);
+    console.log('Theme saved to localStorage:', theme);
+    if (theme === 'dark') {
         document.documentElement.classList.add('dark');
         themeToggleDarkIcon.classList.remove('hidden');
         themeToggleLightIcon.classList.add('hidden');
-        } else {
+        console.log('Dark mode activated, icons updated');
+    } else {
         document.documentElement.classList.remove('dark');
         themeToggleLightIcon.classList.remove('hidden');
         themeToggleDarkIcon.classList.add('hidden');
-        }
-        }
-        
-        mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        });
+        console.log('Light mode activated, icons updated');
+    }
+    console.log('documentElement classList:', document.documentElement.classList);
+    console.log('Dark icon classList:', themeToggleDarkIcon.classList);
+    console.log('Light icon classList:', themeToggleLightIcon.classList);
+}
         
         themeToggle.addEventListener('click', () => {
+        console.log('Theme toggle button clicked');
         const currentTheme = localStorage.getItem('theme');
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-        });
+        console.log('Current theme in localStorage:', currentTheme);
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        console.log('New theme:', newTheme);
+        setTheme(newTheme);
+        console.log('setTheme function called with:', newTheme);
+    });
         
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
