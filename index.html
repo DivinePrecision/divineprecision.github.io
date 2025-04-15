@@ -346,40 +346,40 @@
         const themeToggle = document.getElementById('theme-toggle');
         const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
         const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
+        
         function setTheme(theme) {
-            localStorage.setItem('theme', theme);
-            if (theme === 'dark') {
-                document.documentElement.classList.add('dark');
-                themeToggleDarkIcon.classList.remove('hidden');
-                themeToggleLightIcon.classList.add('hidden');
-            } else {
-                document.documentElement.classList.remove('dark');
-                themeToggleLightIcon.classList.remove('hidden');
-                themeToggleDarkIcon.classList.add('hidden');
-            }
+        localStorage.setItem('theme', theme);
+        if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeToggleDarkIcon.classList.remove('hidden');
+        themeToggleLightIcon.classList.add('hidden');
+        } else {
+        document.documentElement.classList.remove('dark');
+        themeToggleLightIcon.classList.remove('hidden');
+        themeToggleDarkIcon.classList.add('hidden');
         }
-
+        }
+        
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('hidden');
         });
-
+        
         themeToggle.addEventListener('click', () => {
-            const currentTheme = localStorage.getItem('theme');
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        const currentTheme = localStorage.getItem('theme');
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
         });
-
+        
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
-            setTheme(savedTheme);
+        setTheme(savedTheme);
         } else {
-            setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         }
-
-        // Initialize theme on page load to show correct icon
-        const initialTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        setTheme(initialTheme);
-    </script>
+        
+        // Initialize theme on page load to show correct icon (this is now handled above)
+        // const initialTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        // setTheme(initialTheme);
+        </script>
 
 </body>
 </html>
